@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AcademicBuddy</title>
+  <style>
+    :root {
+      --bg: #07111D;
+      --surface: #0d1b2a;
+      --border: #1e3248;
+      --text: #c8d8e8;
+      --text-muted: #7a9ab8;
+      --accent: #00D084;
+      --accent-dim: #00a868;
+      --danger: #ff6b6b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #e8f4ff;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+
+    .effective-date {
+      display: inline-block;
+      margin-top: 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 2rem 0 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--accent);
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #c8d8e8;
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.9rem;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      color: var(--text);
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .callout.warning {
+      border-left-color: #f0a500;
+    }
+
+    .callout p { margin-bottom: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: var(--surface);
+      color: var(--text-muted);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-green { background: rgba(0,208,132,0.15); color: var(--accent); }
+    .badge-red   { background: rgba(255,107,107,0.15); color: var(--danger); }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo-row">
+        <div class="logo-dot"></div>
+        <span style="font-weight:700;color:#e8f4ff;font-size:1rem;">AcademicBuddy</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Chrome Extension for the Genesis Student Portal</p>
+      <span class="effective-date">Effective Date: November 7, 2026 &nbsp;·&nbsp; Version 1.3</span>
+    </header>
+
+    <!-- SUMMARY BOX -->
+    <div class="callout">
+      <p><strong>Short version:</strong> AcademicBuddy has no AcademicBuddy-operated backend. It reads academic information from supported Genesis pages and stores it in Chrome's local extension storage. The extension does not read or store student names, teacher names, or portal page URLs. The optional AI Advisor can run a downloaded WebGPU model on-device, or send messages and relevant academic context to a remote provider you configure. AcademicBuddy sends limited feature-usage events to Umami Cloud; event payloads exclude student names, teacher names, grades, portal URLs, API keys, and chat contents, but Umami receives request metadata such as your IP address. Initial model downloads contact model-artifact hosts without student data.</p>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <h2>1. Overview &amp; Audience</h2>
+    <p>AcademicBuddy ("the extension", "we", "our") is a Chrome browser extension for middle and high school students. It reads academic information from supported Genesis Student Portal pages, displays it in a side panel dashboard, and offers an optional AI Advisor that can use a local WebGPU model or a remote provider configured by the user.</p>
+    <p>The extension has no AcademicBuddy-operated backend. It processes academic information in the browser and sends limited feature-usage events to Umami Cloud. AI messages and relevant academic context are sent to a third-party AI provider only when a user configures and uses remote AI. Students under 13 may use the extension. This policy describes the extension's current technical behavior; it is not a determination that the product complies with COPPA or other laws.</p>
+
+    <div class="callout warning">
+      <p><strong>For parents and guardians:</strong> Academic records are stored locally by Chrome; the extension does not read or store student names, teacher names, or portal page URLs. In local-model mode, advisor prompts and responses stay on the device after the model is downloaded. In remote-provider mode, the Advisor sends the student's message and conversation history to the selected provider, and adds grade data only when a question asks about the student's own academic progress. A student could type identifying information into a message, and previous conversation messages are sent with later remote requests. Matching Edison reference summaries are included for relevant questions. Umami Cloud receives limited feature events and normal request metadata such as the IP address. There is no built-in parent/guardian consent check; review the providers' terms and policies before use.</p>
+    </div>
+
+    <!-- 2. DATA WE ACCESS -->
+    <h2>2. Data the Extension Reads</h2>
+    <p>When a supported Genesis page is open, the extension's content scripts automatically inspect the page and may read:</p>
+    <ul>
+      <li>Course names and grade averages per marking period (teacher names are not read)</li>
+      <li>Assignment details: names, scores, missing or upcoming status</li>
+      <li>Attendance summary (present, absent, tardy counts)</li>
+      <li>A parse timestamp (the portal page URL is not stored)</li>
+    </ul>
+    <p>Parsing happens in your browser. The extension does not inspect or store the student's name or teacher names, and it does not store the portal page URL because URLs may contain student identifiers. On grade pages, the extension may automatically switch through marking-period selections to gather available grade history, then restore the original selection. The extension has no AcademicBuddy-operated server, but some academic information is sent to third parties as described in Section 4. The portal approval setting is not a guaranteed technical barrier against content-script parsing on every matched page.</p>
+
+    <!-- 3. DATA STORAGE -->
+    <h2>3. How Data Is Stored</h2>
+    <p>Parsed academic data (excluding student and teacher names and portal page URLs), settings (including the AI API key), and conversation history are stored in <code>chrome.storage.local</code>, a local extension storage area managed by Chrome. On upgrade, the extension removes previously saved student-name, teacher-name, and portal-URL fields. This storage:</p>
+    <ul>
+      <li>Is stored in the local Chrome profile and is not Chrome Sync storage</li>
+      <li>Is separated from ordinary website storage; it is not an encrypted vault</li>
+      <li>Remains until you use the extension's Reset control, clear extension data, or uninstall the extension</li>
+      <li>Retains up to the latest 50 AI conversation messages; academic data has no automatic expiration</li>
+      <li>Downloaded local model artifacts are cached by the browser and can be deleted from Settings</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Local Storage</th>
+          <th>External Transmission</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Grade &amp; course data</td>
+          <td>chrome.storage.local</td>
+          <td>Used on-device in local mode; sent to the configured remote provider only when the current question explicitly asks about the student's own academic progress. Prior chat messages may also contain academic information.</td>
+        </tr>
+        <tr>
+          <td>AI conversation history</td>
+          <td>chrome.storage.local (max 50 messages)</td>
+          <td>Used on-device in local mode; sent to the configured remote AI provider with each remote Advisor request</td>
+        </tr>
+        <tr>
+          <td>AI API key</td>
+          <td>chrome.storage.local</td>
+          <td>Sent only with requests to the configured remote provider or endpoint</td>
+        </tr>
+        <tr>
+          <td>Settings (provider, model, domains)</td>
+          <td>chrome.storage.local</td>
+          <td>Provider type is included in selected feature events; settings are otherwise not included in analytics payloads</td>
+        </tr>
+        <tr>
+          <td>Analytics or usage telemetry</td>
+          <td>Not retained by the extension</td>
+          <td>Event names and limited feature metadata are sent to Umami Cloud, which also receives request metadata such as IP address</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4. AI PROVIDER -->
+    <h2>4. AI Provider &amp; API Calls</h2>
+    <p>The AI Advisor is optional. Local WebGPU inference requires no API key and runs in an extension offscreen document. Remote AI providers require a configured API key. There is no AcademicBuddy server in either request path.</p>
+
+    <h3>What is sent to the AI provider</h3>
+    <p>In remote-provider mode, each Advisor request includes:</p>
+    <ul>
+      <li>The message you just entered and prior conversation messages (up to 50 are stored locally; stored conversation history is included with each request and may contain information the student typed)</li>
+      <li>Student-specific course names/grades, average, GPA, missing-assignment count, and attendance summary only when the current question explicitly asks about the student's own academic progress. The extension does not intentionally add the parsed student name to the system prompt.</li>
+      <li>When the question matches a supported Edison topic, a relevant summary of public placement/curriculum documents bundled with the extension, including the official source URL</li>
+      <li>Your API key, as required to authenticate with the provider</li>
+    </ul>
+    <p>In local-model mode, the same relevant prompt/context is passed to the on-device model and is not sent to an AI provider. The first model download retrieves model artifacts from configured hosting services and contains no student data. The extension does not make a separate request to Edison to retrieve bundled summaries. The connection-test feature uses a generic test prompt and does not include the stored student record or conversation history.</p>
+
+    <h3>Who receives this data</h3>
+    <p>Remote-provider prompts are sent to <strong>the endpoint configured in Settings</strong>. Depending on your selection, the recipient may be:</p>
+    <ul>
+      <li>Anthropic (api.anthropic.com) — <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a></li>
+      <li>OpenAI (api.openai.com) — <a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
+      <li>Microsoft Azure OpenAI (*.openai.azure.com) — <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a></li>
+      <li>Google Gemini (generativelanguage.googleapis.com) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li>OpenRouter (openrouter.ai) — <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter Privacy Policy</a></li>
+      <li>A custom OpenAI-compatible endpoint you provide, which may be operated by another organization</li>
+    </ul>
+    <p>For local model downloads only, the extension contacts Hugging Face and related model-artifact hosting domains to retrieve model files. These requests do not include prompts, grades, conversation history, or API keys. After the model is cached, inference runs on-device.</p>
+    <p>These providers receive student information directly and may process or retain it under their own terms and policies. AcademicBuddy does not control their handling of data. Review the recipient's privacy, data-retention, and age-related terms before configuring it, and do not send student information to an endpoint you do not trust.</p>
+
+    <h3>API keys</h3>
+    <p>Remote-provider API keys are stored in <code>chrome.storage.local</code> and sent to the configured AI endpoint to authenticate remote requests. Gemini requests include the key in the request URL. Local inference does not require or send an API key. Do not use a key you are not authorized to use, and remove it by resetting the extension or clearing its stored data.</p>
+
+    <h3>Feature-usage analytics</h3>
+    <p>AcademicBuddy sends limited feature events to Umami Cloud (<code>cloud.umami.is</code>). Event payloads include event names and limited metadata such as course counts or selected AI provider type; they do not include student names, teacher names, grade values, course names, portal URLs, API keys, or chat contents. Umami receives normal request connection metadata, including the IP address, and processes requests under its own policies. See <a href="https://umami.is/privacy" target="_blank" rel="noopener">Umami's privacy policy</a>.</p>
+    <p>Events include <code>grades_parsed</code> (course and marking-period counts), <code>advisor_message_sent</code> (provider type), <code>ai_connection_tested</code> (provider type), and <code>conversation_cleared</code> (no event metadata).</p>
+
+    <!-- 5. PERMISSIONS -->
+    <h2>5. Extension Permissions &amp; Justification</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why It's Needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>sidePanel</code></td>
+          <td>To display the grade dashboard in Chrome's side panel</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>To save grades, settings, and conversation history locally on your device</td>
+        </tr>
+        <tr>
+          <td><code>offscreen</code></td>
+          <td>To run the local WebGPU model outside the service worker lifecycle</td>
+        </tr>
+        <tr>
+          <td><code>https://huggingface.co/*</code>, <code>https://*.hf.co/*</code></td>
+          <td>To download allowlisted local model artifacts; no student prompts, grades, conversation history, or API keys are sent in these requests</td>
+        </tr>
+        <tr>
+          <td><code>https://cloud.umami.is/*</code></td>
+          <td>To send limited feature-usage events; Umami receives normal request metadata such as the IP address</td>
+        </tr>
+        <tr>
+          <td><code>tabs</code></td>
+          <td>To identify the active tab's URL so the side panel can determine whether it is on a supported student portal. The URL is not saved with parsed student data.</td>
+        </tr>
+        <tr>
+          <td>Content scripts on <code>*.k12.nj.us</code>, <code>*.genesis-portal.org</code></td>
+          <td>To read grade data from the Genesis portal pages you visit</td>
+        </tr>
+        <tr>
+          <td><code>https://api.anthropic.com/*</code></td>
+          <td>Optional AI Advisor — direct API calls to Anthropic Claude if you configure this provider</td>
+        </tr>
+        <tr>
+          <td><code>https://api.openai.com/*</code></td>
+          <td>Optional AI Advisor — direct API calls to OpenAI if you configure this provider</td>
+        </tr>
+        <tr>
+          <td><code>https://*.openai.azure.com/*</code></td>
+          <td>Optional AI Advisor — Azure OpenAI users receive a unique subdomain (e.g., <em>yourname</em>.openai.azure.com); the wildcard is required to support any user-configured Azure deployment endpoint</td>
+        </tr>
+        <tr>
+          <td><code>https://generativelanguage.googleapis.com/*</code></td>
+          <td>Optional AI Advisor — direct API calls to Google Gemini if you configure this provider</td>
+        </tr>
+        <tr>
+          <td><code>https://openrouter.ai/*</code></td>
+          <td>Optional AI Advisor — direct API calls to OpenRouter if you configure this provider</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 6. CHILDREN -->
+    <h2>6. Children's Privacy (COPPA)</h2>
+    <p>AcademicBuddy is intended for middle and high school students, and students under 13 may use it. The extension reads and stores academic records locally, but does not read or store student names, teacher names, or portal page URLs. Its optional AI feature can process messages and relevant context on-device, or send messages and conversation history to the provider configured by the user. Limited feature events are sent to Umami Cloud as described above.</p>
+    <p>The extension has no account system and no built-in age gate or parent/guardian consent verification. A user-configured API key is not proof of parental consent. Parents and guardians should review this policy and the relevant third-party terms before enabling AI or allowing a student to use the extension. This policy is not a legal compliance certification.</p>
+    <p>AcademicBuddy operates no server-side student record store. This does not prevent third-party providers from receiving or processing information as described above.</p>
+    <p>Parents or guardians with questions may contact us using the information in Section 10. To remove locally stored extension data, use the Reset control in Settings or uninstall the extension. Data already sent to third parties is subject to those providers' policies and deletion processes.</p>
+
+    <!-- 7. DATA SHARING -->
+    <h2>7. Data Sharing &amp; Sale</h2>
+    <p>AcademicBuddy does not operate a backend that receives student records. In local-model mode, advisor inference occurs on-device, although downloading model artifacts contacts their hosting services without sending student data. In remote-provider mode, AI request data goes to the configured provider. Limited feature events are sent to Umami Cloud. We do not sell student data. Each third party handles the information it receives under its own policies and terms.</p>
+
+    <!-- 8. SECURITY -->
+    <h2>8. Security</h2>
+    <p>Security measures built into the extension:</p>
+    <ul>
+      <li>All AI responses are text-escaped before display — no raw HTML from AI is ever injected into the page (XSS prevention)</li>
+      <li>API keys are stored in Chrome's local extension storage and are not exposed through ordinary website storage</li>
+      <li>Remote AI calls and local model inference run in extension-owned contexts, separate from the portal page's JavaScript context</li>
+      <li>No external scripts, fonts, or resources are loaded from third parties</li>
+    </ul>
+    <p>Local extension storage is not an encrypted vault. Third-party AI, model-artifact, and analytics services receive network requests as described in Section 4.</p>
+
+    <!-- 9. CHANGES -->
+    <h2>9. Changes to This Policy</h2>
+    <p>If this policy changes, we will update the Effective Date above and publish the new version in the Chrome Web Store listing. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <!-- 10. CONTACT -->
+    <h2>10. Contact</h2>
+    <p>If you have questions about this privacy policy, or wish to report a concern, you may open an issue on the project repository:</p>
+    <p><a href="https://github.com/shram2k/academicbuddy/issues" target="_blank" rel="noopener">https://github.com/shram2k/academicbuddy/issues</a></p>
+
+    <footer>
+      <p>AcademicBuddy &nbsp;·&nbsp; Open-source Chrome Extension &nbsp;·&nbsp; MIT License</p>
+      <p style="margin-top:0.4rem;">This extension is not affiliated with or endorsed by Edison Township Public Schools or the Genesis Student Portal.</p>
+    </footer>
+  </main>
+</body>
+</html>
