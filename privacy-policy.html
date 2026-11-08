@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — AcademicBuddy</title>
+  <title>Privacy Policy — ClassTrail</title>
   <style>
     :root {
       --bg: #07111D;
@@ -175,22 +175,22 @@
     <header>
       <div class="logo-row">
         <div class="logo-dot"></div>
-        <span style="font-weight:700;color:#e8f4ff;font-size:1rem;">AcademicBuddy</span>
+        <span style="font-weight:700;color:#e8f4ff;font-size:1rem;">ClassTrail</span>
       </div>
       <h1>Privacy Policy</h1>
       <p class="subtitle">Chrome Extension for the Genesis Student Portal</p>
-      <span class="effective-date">Effective Date: November 7, 2026 &nbsp;·&nbsp; Version 1.3</span>
+      <span class="effective-date">Effective Date: November 8, 2026 &nbsp;·&nbsp; Version 1.4</span>
     </header>
 
     <!-- SUMMARY BOX -->
     <div class="callout">
-      <p><strong>Short version:</strong> AcademicBuddy has no AcademicBuddy-operated backend. It reads academic information from supported Genesis pages and stores it in Chrome's local extension storage. The extension does not read or store student names, teacher names, or portal page URLs. The optional AI Advisor can run a downloaded WebGPU model on-device, or send messages and relevant academic context to a remote provider you configure. AcademicBuddy sends limited feature-usage events to Umami Cloud; event payloads exclude student names, teacher names, grades, portal URLs, API keys, and chat contents, but Umami receives request metadata such as your IP address. Initial model downloads contact model-artifact hosts without student data.</p>
+      <p><strong>Short version:</strong> ClassTrail has no ClassTrail-operated backend. It reads academic information from supported Genesis pages and stores it in Chrome's local extension storage. The extension does not read or store student names, teacher names, or portal page URLs. The optional AI Advisor can run a downloaded WebGPU model on-device, or send messages and relevant academic context to a remote provider you configure. ClassTrail sends limited feature-usage events to Umami Cloud; event payloads exclude student names, teacher names, grades, portal URLs, API keys, and chat contents, but Umami receives request metadata such as your IP address. Initial model downloads contact model-artifact hosts without student data.</p>
     </div>
 
     <!-- 1. OVERVIEW -->
     <h2>1. Overview &amp; Audience</h2>
-    <p>AcademicBuddy ("the extension", "we", "our") is a Chrome browser extension for middle and high school students. It reads academic information from supported Genesis Student Portal pages, displays it in a side panel dashboard, and offers an optional AI Advisor that can use a local WebGPU model or a remote provider configured by the user.</p>
-    <p>The extension has no AcademicBuddy-operated backend. It processes academic information in the browser and sends limited feature-usage events to Umami Cloud. AI messages and relevant academic context are sent to a third-party AI provider only when a user configures and uses remote AI. Students under 13 may use the extension. This policy describes the extension's current technical behavior; it is not a determination that the product complies with COPPA or other laws.</p>
+    <p>ClassTrail ("the extension", "we", "our") is a Chrome browser extension for middle and high school students. It reads academic information from supported Genesis Student Portal pages, displays it in a side panel dashboard, and offers an optional AI Advisor that can use a local WebGPU model or a remote provider configured by the user.</p>
+    <p>The extension has no ClassTrail-operated backend. It processes academic information in the browser and sends limited feature-usage events to Umami Cloud. AI messages and relevant academic context are sent to a third-party AI provider only when a user configures and uses remote AI. Students under 13 may use the extension. This policy describes the extension's current technical behavior; it is not a determination that the product complies with COPPA or other laws.</p>
 
     <div class="callout warning">
       <p><strong>For parents and guardians:</strong> Academic records are stored locally by Chrome; the extension does not read or store student names, teacher names, or portal page URLs. In local-model mode, advisor prompts and responses stay on the device after the model is downloaded. In remote-provider mode, the Advisor sends the student's message and conversation history to the selected provider, and adds grade data only when a question asks about the student's own academic progress. A student could type identifying information into a message, and previous conversation messages are sent with later remote requests. Matching Edison reference summaries are included for relevant questions. Umami Cloud receives limited feature events and normal request metadata such as the IP address. There is no built-in parent/guardian consent check; review the providers' terms and policies before use.</p>
@@ -205,7 +205,7 @@
       <li>Attendance summary (present, absent, tardy counts)</li>
       <li>A parse timestamp (the portal page URL is not stored)</li>
     </ul>
-    <p>Parsing happens in your browser. The extension does not inspect or store the student's name or teacher names, and it does not store the portal page URL because URLs may contain student identifiers. On grade pages, the extension may automatically switch through marking-period selections to gather available grade history, then restore the original selection. The extension has no AcademicBuddy-operated server, but some academic information is sent to third parties as described in Section 4. The portal approval setting is not a guaranteed technical barrier against content-script parsing on every matched page.</p>
+    <p>Parsing happens in your browser. The extension does not inspect or store the student's name or teacher names, and it does not store the portal page URL because URLs may contain student identifiers. On grade pages, the extension may automatically switch through marking-period selections to gather available grade history, then restore the original selection. The extension has no ClassTrail-operated server, but some academic information is sent to third parties as described in Section 4. The portal approval setting is not a guaranteed technical barrier against content-script parsing on every matched page.</p>
 
     <!-- 3. DATA STORAGE -->
     <h2>3. How Data Is Stored</h2>
@@ -257,7 +257,7 @@
 
     <!-- 4. AI PROVIDER -->
     <h2>4. AI Provider &amp; API Calls</h2>
-    <p>The AI Advisor is optional. Local WebGPU inference requires no API key and runs in an extension offscreen document. Remote AI providers require a configured API key. There is no AcademicBuddy server in either request path.</p>
+    <p>The AI Advisor is optional. Local WebGPU inference requires no API key and runs in an extension offscreen document. Remote AI providers require a configured API key. There is no ClassTrail server in either request path.</p>
 
     <h3>What is sent to the AI provider</h3>
     <p>In remote-provider mode, each Advisor request includes:</p>
@@ -280,13 +280,13 @@
       <li>A custom OpenAI-compatible endpoint you provide, which may be operated by another organization</li>
     </ul>
     <p>For local model downloads only, the extension contacts Hugging Face and related model-artifact hosting domains to retrieve model files. These requests do not include prompts, grades, conversation history, or API keys. After the model is cached, inference runs on-device.</p>
-    <p>These providers receive student information directly and may process or retain it under their own terms and policies. AcademicBuddy does not control their handling of data. Review the recipient's privacy, data-retention, and age-related terms before configuring it, and do not send student information to an endpoint you do not trust.</p>
+    <p>These providers receive student information directly and may process or retain it under their own terms and policies. ClassTrail does not control their handling of data. Review the recipient's privacy, data-retention, and age-related terms before configuring it, and do not send student information to an endpoint you do not trust.</p>
 
     <h3>API keys</h3>
     <p>Remote-provider API keys are stored in <code>chrome.storage.local</code> and sent to the configured AI endpoint to authenticate remote requests. Gemini requests include the key in the request URL. Local inference does not require or send an API key. Do not use a key you are not authorized to use, and remove it by resetting the extension or clearing its stored data.</p>
 
     <h3>Feature-usage analytics</h3>
-    <p>AcademicBuddy sends limited feature events to Umami Cloud (<code>cloud.umami.is</code>). Event payloads include event names and limited metadata such as course counts or selected AI provider type; they do not include student names, teacher names, grade values, course names, portal URLs, API keys, or chat contents. Umami receives normal request connection metadata, including the IP address, and processes requests under its own policies. See <a href="https://umami.is/privacy" target="_blank" rel="noopener">Umami's privacy policy</a>.</p>
+    <p>ClassTrail sends limited feature events to Umami Cloud (<code>cloud.umami.is</code>). Event payloads include event names and limited metadata such as course counts or selected AI provider type; they do not include student names, teacher names, grade values, course names, portal URLs, API keys, or chat contents. Umami receives normal request connection metadata, including the IP address, and processes requests under its own policies. See <a href="https://umami.is/privacy" target="_blank" rel="noopener">Umami's privacy policy</a>.</p>
     <p>Events include <code>grades_parsed</code> (course and marking-period counts), <code>advisor_message_sent</code> (provider type), <code>ai_connection_tested</code> (provider type), and <code>conversation_cleared</code> (no event metadata).</p>
 
     <!-- 5. PERMISSIONS -->
@@ -352,14 +352,14 @@
 
     <!-- 6. CHILDREN -->
     <h2>6. Children's Privacy (COPPA)</h2>
-    <p>AcademicBuddy is intended for middle and high school students, and students under 13 may use it. The extension reads and stores academic records locally, but does not read or store student names, teacher names, or portal page URLs. Its optional AI feature can process messages and relevant context on-device, or send messages and conversation history to the provider configured by the user. Limited feature events are sent to Umami Cloud as described above.</p>
+    <p>ClassTrail is intended for middle and high school students, and students under 13 may use it. The extension reads and stores academic records locally, but does not read or store student names, teacher names, or portal page URLs. Its optional AI feature can process messages and relevant context on-device, or send messages and conversation history to the provider configured by the user. Limited feature events are sent to Umami Cloud as described above.</p>
     <p>The extension has no account system and no built-in age gate or parent/guardian consent verification. A user-configured API key is not proof of parental consent. Parents and guardians should review this policy and the relevant third-party terms before enabling AI or allowing a student to use the extension. This policy is not a legal compliance certification.</p>
-    <p>AcademicBuddy operates no server-side student record store. This does not prevent third-party providers from receiving or processing information as described above.</p>
+    <p>ClassTrail operates no server-side student record store. This does not prevent third-party providers from receiving or processing information as described above.</p>
     <p>Parents or guardians with questions may contact us using the information in Section 10. To remove locally stored extension data, use the Reset control in Settings or uninstall the extension. Data already sent to third parties is subject to those providers' policies and deletion processes.</p>
 
     <!-- 7. DATA SHARING -->
     <h2>7. Data Sharing &amp; Sale</h2>
-    <p>AcademicBuddy does not operate a backend that receives student records. In local-model mode, advisor inference occurs on-device, although downloading model artifacts contacts their hosting services without sending student data. In remote-provider mode, AI request data goes to the configured provider. Limited feature events are sent to Umami Cloud. We do not sell student data. Each third party handles the information it receives under its own policies and terms.</p>
+    <p>ClassTrail does not operate a backend that receives student records. In local-model mode, advisor inference occurs on-device, although downloading model artifacts contacts their hosting services without sending student data. In remote-provider mode, AI request data goes to the configured provider. Limited feature events are sent to Umami Cloud. We do not sell student data. Each third party handles the information it receives under its own policies and terms.</p>
 
     <!-- 8. SECURITY -->
     <h2>8. Security</h2>
@@ -378,11 +378,10 @@
 
     <!-- 10. CONTACT -->
     <h2>10. Contact</h2>
-    <p>If you have questions about this privacy policy, or wish to report a concern, you may open an issue on the project repository:</p>
-    <p><a href="https://github.com/shram2k/academicbuddy/issues" target="_blank" rel="noopener">https://github.com/shram2k/academicbuddy/issues</a></p>
+    <p>If you have questions about this privacy policy or wish to report a concern, contact <a href="mailto:classtrail.support@gmail.com">classtrail.support@gmail.com</a>.</p>
 
     <footer>
-      <p>AcademicBuddy &nbsp;·&nbsp; Open-source Chrome Extension &nbsp;·&nbsp; MIT License</p>
+      <p>ClassTrail &nbsp;·&nbsp; Open-source Chrome Extension &nbsp;·&nbsp; MIT License</p>
       <p style="margin-top:0.4rem;">This extension is not affiliated with or endorsed by Edison Township Public Schools or the Genesis Student Portal.</p>
     </footer>
   </main>
